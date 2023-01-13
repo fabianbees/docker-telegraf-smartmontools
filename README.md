@@ -26,4 +26,4 @@ The docker user directive can accomplish this by adding:
 ```
 
 
-(--> see https://github.com/influxdata/influxdata-docker/issues/543#issuecomment-960246264)
+(--> see https://github.com/influxdata/influxdata-docker/issues/543#issuecomment-960246264 and https://www.influxdata.com/blog/docker-run-telegraf-as-non-root/)
