@@ -7,6 +7,12 @@ https://hub.docker.com/_/telegraf
 It only adds the packages smartmontools and nvme-cli.
 
 
+## Get the image
+
+```
+docker pull fabianbees/docker-telegraf-smartmontools:latest
+```
+
 
 
 ## Error while using the [imputs.docker] plugin

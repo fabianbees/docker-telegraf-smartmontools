@@ -4,9 +4,9 @@ variables:
   CI_BUILD_ARM64: "enabled"
   CI_BUILD_ARMv7: ""
   # For using DOCKER_HUB as registry, set this Var to "true"
-  DOCKER_HUB: "false"
+  DOCKER_HUB: "true"
   # Override CI_PROJECT_PATH for using correct DOCKERHUB path
-  CI_PROJECT_PATH: ""
+  CI_PROJECT_PATH: "fabianbees/docker-telegraf-smartmontools"
   VERSION: "1.25.0"
 
 # Build Stages
