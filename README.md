@@ -14,6 +14,23 @@ docker pull fabianbees/docker-telegraf-smartmontools:latest
 ```
 
 
+## Still seeing no smart data?
+
+Smartmontools and nvme-cli have to use sudo, therefore the following has to be set in ```telegraf.conf```:
+
+```
+# # Read metrics from storage devices supporting S.M.A.R.T.
+[[inputs.smart]]
+#   ## On most platforms used cli utilities requires root access.
+#   ## Setting 'use_sudo' to true will make use of sudo to run smartctl or nvme-cli.
+#   ## Sudo must be configured to allow the telegraf user to run smartctl or nvme-cli
+#   ## without a password.
+#   # use_sudo = false
+    use_sudo = true
+```
+
+
+
 
 ## Error while using the [imputs.docker] plugin
 
